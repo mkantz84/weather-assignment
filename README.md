@@ -20,6 +20,31 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Debugging with VS Code
+
+To debug API routes or server-side code in this project using Visual Studio Code:
+
+1. Go to the Run & Debug panel in VS Code.
+2. Click "create a launch.json file" (if you don't have one).
+3. Choose "Node.js" as the environment.
+4. Add the following configuration:
+
+```json
+{
+  "type": "node",
+  "request": "launch",
+  "name": "Next.js: debug dev server",
+  "runtimeExecutable": "npm",
+  "runtimeArgs": ["run", "dev"],
+  "port": 9229,
+  "console": "integratedTerminal",
+  "skipFiles": ["<node_internals>/**"]
+}
+```
+
+5. Set breakpoints in your API route or server-side files.
+6. Start debugging (F5 or green play button). The server will start in debug mode, and breakpoints will be hit when those parts of the code are executed.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
