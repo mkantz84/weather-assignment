@@ -20,6 +20,30 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Running Tests
+
+### Backend (API & DAL) tests (Jest)
+
+Run all backend tests:
+
+```bash
+npx jest
+```
+
+- Only backend (Node) tests will run.
+- Test files: `src/app/api/**/*.test.ts`, `src/dal/**/*.test.ts`
+
+### Frontend (React/component) tests (Vitest)
+
+Run all frontend/component tests:
+
+```bash
+npx vitest run
+```
+
+- Only frontend/component tests will run.
+- Test files: `src/components/**/*.test.tsx` (or as configured in `vitest.config.ts`)
+
 ## Debugging with VS Code
 
 To debug API routes or server-side code in this project using Visual Studio Code:
