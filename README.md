@@ -1,3 +1,5 @@
+This is a [Next.js](https://nextjs.org) project for reviewing weather (min/max temperatures) of specific cities, based on sqlite data set.
+
 ## Getting Started
 
 First, run the development server:
