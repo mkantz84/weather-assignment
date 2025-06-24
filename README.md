@@ -52,17 +52,19 @@ npx jest
 
 - Only backend (Node) tests will run.
 - Test files: `src/app/api/**/*.test.ts`, `src/dal/**/*.test.ts`
+- **Do not run these tests with Vitest. They use Jest-specific APIs.**
 
 ### Frontend (React/component) tests (Vitest)
 
 Run all frontend/component tests:
 
 ```bash
-npx vitest run
+npx vitest run src/components
 ```
 
 - Only frontend/component tests will run.
-- Test files: `src/components/**/*.test.tsx` (or as configured in `vitest.config.ts`)
+- Test files: `src/components/**/*.test.tsx`
+- **Do not run backend tests with Vitest.**
 
 ## Debugging with VS Code
 
