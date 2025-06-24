@@ -20,6 +20,26 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Running with Docker
+
+You can build and run this app in a production-ready Docker container:
+
+### Build the Docker image
+
+```bash
+docker build -t weather-app .
+```
+
+### Run the Docker container
+
+```bash
+docker run -p 3000:3000 weather-app
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+> **Note:** The Docker build will compile all native dependencies (like `sqlite3`) for the correct architecture inside the container. Make sure you have Docker running and that your `.dockerignore` file excludes `node_modules`.
+
 ## Running Tests
 
 ### Backend (API & DAL) tests (Jest)
