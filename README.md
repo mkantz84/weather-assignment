@@ -94,6 +94,7 @@ So with the few time I had this is the architecture I found to be most suitable.
 I do admit that it's hard to digest next.js folder architecture after years of total separation between frontend and backend services.
 
 Disclaimer #1 - I worked with cursor vibe coding, so I was able to do relatively a lot in few time. I can stand behind every line of code - everything cursor does is upon my request, and there was a lot of iterations until I was satisfied.
+
 Disclaimer #2 - The assignment took me more than 3 hours, most of the time was on exploring next.js architecture and best practices. I would say it took me total of 5 hours, half of it was the exploration.
 
 If I had more time:
