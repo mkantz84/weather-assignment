@@ -86,3 +86,25 @@ To debug API routes or server-side code in this project using Visual Studio Code
 
 5. Set breakpoints in your API route or server-side files.
 6. Start debugging (F5 or green play button). The server will start in debug mode, and breakpoints will be hit when those parts of the code are executed.
+
+## Few words on the approach
+
+This is my first challenge with next.js, so I took a bit time to explore the best practices working with it.
+So with the few time I had this is the architecture I found to be most suitable.
+I do admit that it's hard to digest next.js folder architecture after years of total separation between frontend and backend services.
+
+Disclaimer #1 - I worked with cursor vibe coding, so I was able to do relatively a lot in few time. I can stand behind every line of code - everything cursor does is my request. And there was a lot of iterations until I was satisfied with the code.
+Disclaimer #2 - The assignment took me more than 3 hours, most of the time was on exploring next.js architecture and best practices. I would say it took me total of 5 hours, half of it was the exploration.
+
+If I had more time:
+
+1. Add more unit tests both to the React components and to the api side.
+2. Add integration and E2E tests.
+3. Add cache layer for the api (backend) side.
+4. Go over the folder architecture and explore more best practices - I still dont know my feelings about next.js approach, so need more time with it.
+5. Add a button to run the endpoint call, and not on every input change.
+6. Im not a designer, but I guess the UI can look better.
+7. Add a message when the data returns empty or with error - now the graph is just empty.
+8. Add components for handling errors.
+
+Overall I really enjoyed the assignment. Thank you!
